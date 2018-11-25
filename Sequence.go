@@ -43,6 +43,7 @@ func CreateRandomArray(numElem int) []float64 {
 }
 
 func CreateRandomMatrix(numRows int, numCols int) [][]float64 {
+	// Creates a matrix of aritrary floats
 	rand.Seed(time.Now().UTC().UnixNano())
 	m := make([][]float64, numRows)
 	var k, sum float64
